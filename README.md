@@ -2,7 +2,7 @@
 
 Lazy Load es un patrón de diseño que consiste en retrasar la carga o inicialización de un objeto hasta el momento de su utilización. Esto significa que obtiene los datos o procesa los objetos solamente cuando se necesitan. 
 
-Ejemplo de estrucutra de directorios para un proyecto mediano/grande:
+Ejemplo de estructura de directorios para un proyecto mediano/grande:
 
     ng new admin --routing=true --style=scss
     ng g m auth --routing
