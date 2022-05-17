@@ -1,27 +1,26 @@
-# Admin
+# Estructura de directorios con Lazyload
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Lazy Load es un patrón de diseño que consiste en retrasar la carga o inicialización de un objeto hasta el momento de su utilización. Esto significa que obtiene los datos o procesa los objetos solamente cuando se necesitan. 
 
-## Development server
+Ejemplo de estrucutra de directorios para un proyecto mediano/grande:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    ng new admin --routing=true --style=scss
+    ng g m auth --routing
+    ng g m core --routing
+    ng g m shared
 
-## Code scaffolding
+    ng g c auth/pages/login
+    ng g c auth/pages/register
+    ng g c auth/pages/recover
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    ng g c core
+    ng g c core/customers/pages/index
+    ng g c core/customers/pages/create
+    ng g c core/customers/pages/update
+    ng g c core/products/pages/index
+    ng g c core/products/pages/create
+    ng g c core/products/pages/update
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ng g c shared/header
+    ng g c shared/footer
+    ng g c shared/sidebar
